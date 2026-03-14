@@ -1,0 +1,222 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Developer Portfolio</title>
+
+<link rel="stylesheet" href="{% static 'css/style.css' %}">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<div class="dark-bg"></div>
+
+<div class="bg-animation"></div>
+
+<!-- NAVBAR -->
+
+<nav class="navbar">
+
+<div class="logo">Kaushal Kushwah</div>
+
+<div class="menu-toggle" id="menu">
+
+☰
+
+</div>
+
+<ul class="nav-links" id="navLinks">
+
+    
+<li><a href="#home">Home</a></li>
+<li><a href="#about">About</a></li>
+<li><a href="#skills">Skills</a></li>
+<li><a href="#projects">Projects</a></li>
+<li><a href="#contact">Contact</a></li>
+
+</ul>
+
+</nav>
+
+<!-- HERO -->
+
+<section id="home" class="hero">
+
+<div class="hero-container">
+
+<div class="hero-text">
+
+<h1>Hello I'm <span>Kaushal Kushwah</span></h1>
+
+<h2 class="typing"></h2>
+
+<div class="hero-buttons">
+
+<a href="#projects" class="btn">View My Work</a>
+
+<a href="{% static 'files/resume.pdf' %}" class="btn resume-btn" download>
+Download Resume
+</a>
+
+</div>
+
+</div>
+
+<div class="hero-image">
+
+<div class="image-card">
+
+<img src="{% static 'images/hero_img.JPG' %}" alt="profile-imgage">
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ABOUT -->
+
+<section id="about" class="about">
+
+<h2>About Me</h2>
+
+<p>
+
+Detail-oriented aspiring web developer with knowledge of HTML, CSS, Basic JavaScript, Python, and Django for building
+dynamic and responsive web applications. Familiar with SQL databases, WordPress development, and SEO practices to
+create optimized, user-friendly, and search-engine-friendly websites. Able to develop basic front-end interfaces and
+support back-end functionality using Python and Django. Passionate about learning new technologies, improving coding
+skills, and applying problem-solving abilities to build efficient web solutions. Eager to contribute to a development team
+while continuously expanding technical expertise in modern web development
+
+</p>
+
+</section>
+
+<!-- SKILLS -->
+
+<section id="skills">
+
+<h2>Skills</h2>
+
+<div class="skills-grid">
+
+<div class="skill-card">Python</div>
+<div class="skill-card">Django</div>
+<div class="skill-card">Basic JavaScript</div>
+<div class="skill-card">HTML</div>
+<div class="skill-card">CSS</div>
+<div class="skill-card">Basic SQL</div>
+<div class="skill-card">Git/Github</div>
+<div class="skill-card">WordPress</div>
+<div class="skill-card">Vs Code</div>
+
+</div>
+
+</section>
+
+<!-- PROJECTS -->
+
+<section id="projects">
+
+<h2>Projects</h2>
+
+<div class="project-grid">
+<a target="_blank" href="https://student-management-system-i6i5.onrender.com/">
+<div class="project-card">
+
+<img src="{% static 'images/project1.jpg' %}">
+
+<h3>Student Management System (Django)</h3>
+
+</div>
+</a>
+
+<a href="{% url 'home' %}">
+<div class="project-card">
+
+<img src="{% static 'images/project2.png' %}">
+
+<h3>Portfolio Website (Django)</h3>
+
+</div>
+</a>
+
+
+</div>
+
+</section>
+
+<!-- PROJECT MODAL -->
+
+<div id="modal" class="modal">
+
+<div class="modal-content">
+
+<span class="close" onclick="closeModal()">&times;</span>
+
+<h3 id="modalTitle"></h3>
+
+<p>This project was built using Django and modern frontend technologies.</p>
+
+</div>
+
+</div>
+
+<!-- CONTACT -->
+
+<section id="contact">
+
+<h2>Contact</h2>
+
+<div class="contact-container">
+
+<div class="contact-card">
+
+<h3>Email</h3>
+
+<p>kaushalkushwah<br>1356@gmail.com</p>
+
+</div>
+
+<div class="contact-card">
+
+<h3>Phone</h3>
+
+<p>+91 8279734606</p>
+
+</div>
+
+<div class="contact-card">
+
+<h3>Location</h3>
+
+<p>Aligarh, Uttar Pradesh</p>
+
+</div>
+
+</div>
+
+</section>
+
+<footer>
+
+<p>© 2026 Kaushal Kushwah</p>
+
+</footer>
+
+<script src="{% static 'js/script.js' %}"></script>
+
+</body>
+
+</html>
